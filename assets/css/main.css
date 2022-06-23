@@ -1672,3 +1672,26 @@ input, select, textarea {
 	justify-content: space-around;
 	margin-bottom: 38px;
 }
+
+.skill-list{
+	list-style: none;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.skill-list li {
+	margin: 1%;
+	width: 20%;
+}
+.skill-list p {
+	text-align: center;
+}
+
+ul.actions {
+	display: flex;
+	justify-content: space-evenly;
+}
+ul.icons {
+	display: flex;
+	justify-content: space-around;
+}
