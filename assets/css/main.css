@@ -1695,3 +1695,35 @@ ul.icons {
 	display: flex;
 	justify-content: space-around;
 }
+
+.history {
+	list-style: none;
+}
+.history-item{
+	margin-bottom: 10px;
+}
+.history-item > img{
+	width: 50px;
+}
+.history > li  {
+	display: flex;
+	height: 55px;
+	align-items: center;
+}
+
+.history h5{
+	padding-left: 30px;
+}
+
+#utd-text{
+	padding-top: 3px;
+}
+#samsung-text{
+	padding-top: 17px;
+}
+#aa-text{
+	padding-top: 14px;
+}
+#loc-text{
+	padding-top: 10px;
+}
