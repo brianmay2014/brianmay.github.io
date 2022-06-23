@@ -20,31 +20,54 @@
 		<noscript
 			><link rel="stylesheet" href="assets/css/noscript.css"
 		/></noscript>
-		<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-    <script type="text/javascript">
-        (function() {
-            // https://dashboard.emailjs.com/admin/account
-            emailjs.init('7yMViAYgdIsCx4vDe');
-        })();
-    </script>
-    <script type="text/javascript">
-        window.onload = function() {
-            document.getElementById('contact-form').addEventListener('submit', function(event) {
-                event.preventDefault();
-                // generate a five digit number for the contact_number variable
-                this.contact_number = Math.random() * 100000 | 0;
-                // these IDs from the previous steps
-                emailjs.sendForm('service_d8n045n', 'contact_form', this)
-                    .then(function() {
-                        console.log('SUCCESS!');
-						if(alert('Message sent successfully!')){}
-						else    window.location.reload(); 
-                    }, function(error) {
-                        console.log('FAILED...', error);
-                    });
-            });
-        }
-    </script>
+		<script
+			type="text/javascript"
+			src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+		></script>
+		<script type="text/javascript">
+			(function () {
+				// https://dashboard.emailjs.com/admin/account
+				emailjs.init("7yMViAYgdIsCx4vDe");
+			})();
+		</script>
+		<script type="text/javascript">
+			window.onload = function () {
+				document
+					.getElementById("contact-form")
+					.addEventListener("submit", function (event) {
+						event.preventDefault();
+						// generate a five digit number for the contact_number variable
+						this.contact_number = (Math.random() * 100000) | 0;
+						// these IDs from the previous steps
+						emailjs
+							.sendForm("service_d8n045n", "contact_form", this)
+							.then(
+								function () {
+									console.log("SUCCESS!");
+									if (alert("Message sent successfully!")) {
+									} else window.location.reload();
+								},
+								function (error) {
+									console.log("FAILED...", error);
+								}
+							);
+					});
+			};
+		</script>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script
+			async
+			src="https://www.googletagmanager.com/gtag/js?id=G-EEFF89VN44"
+		></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag() {
+				dataLayer.push(arguments);
+			}
+			gtag("js", new Date());
+
+			gtag("config", "G-EEFF89VN44");
+		</script>
 	</head>
 	<body class="is-preload">
 		<!-- Wrapper -->
@@ -57,9 +80,7 @@
 				<div class="content">
 					<div class="inner">
 						<h1>Brian May</h1>
-						<p>
-							Software Engineer
-						</p>
+						<p>Software Engineer</p>
 					</div>
 				</div>
 				<nav>
@@ -82,67 +103,111 @@
 						><img src="images/about.png" alt=""
 					/></span>
 					<p>
-						Ever since I was young I have always loved to build things. It started with Legos early on, then into music, and now I am embracing the creativity that coding has to offer.
-						My parents have their Masters in Computer Science so it was always around and I always had an interest in coding.
-						My mind just works in solving problems, so engineering was an easy and natural choice for me to study in college.
-											</p>
+						Ever since I was young I have always loved to build
+						things. It started with Legos early on, then into music,
+						and now I am embracing the creativity that coding has to
+						offer. My parents have their Masters in Computer Science
+						so it was always around and I always had an interest in
+						coding. My mind just works in solving problems, so
+						engineering was an easy and natural choice for me to
+						study in college.
+					</p>
 					<p>
-						After I got my Bachelors and Masters in Electrical Engineering, I went on to work as a Senior Engineer at Samsung for almost ten years.
-						Near the end of my time there I made an app using Flask that reignited my coding passion, it felt so great to have an idea and see it through from the start to the finish.
-						I was feeling stuck in my career there and the opportunities to contribute creatively and feel like I was noticed for my contributions.
-											</p>
+						After I got my Bachelors and Masters in Electrical
+						Engineering, I went on to work as a Senior Engineer at
+						Samsung for almost ten years. Near the end of my time
+						there I made an app using Flask that reignited my coding
+						passion, it felt so great to have an idea and see it
+						through from the start to the finish. I was feeling
+						stuck in my career there and the opportunities to
+						contribute creatively and feel like I was noticed for my
+						contributions.
+					</p>
 					<p>
-						I had many close friends do boot camps, and knew that it was the right step for me and my engineering career.
-						Throughout App Academy I have sharpened my skills in Python and JavaScript, and made four applications from the ground up.
-						By the way, check out my <a href="#work">awesome work</a>.
-						I have earnestly loved learning about Redux and Flask as it gives a deeper understanding of how applications are built and built efficiently.
-						I have really loved React and the flexibility it offers, and making the front-end of the application really stand out, while being subtle.
-</p>
-<p>
-						In my decade of engineering experience, I have learned how to effectively communication and be an engaged listener.
-						I strongly feel the most important thing about a constructive work environment is communication.
-						I am looking forward to changing my adjective in my engineering career to software and start building incredible applications!
-						I love all things design, architecture, and am always reading (listening) to a book on a new topic.
-						My other passions outside of coding include playing guitar, snowboarding, comedy, and traveling. 
+						I had many close friends do boot camps, and knew that it
+						was the right step for me and my engineering career.
+						Throughout App Academy I have sharpened my skills in
+						Python and JavaScript, and made four applications from
+						the ground up. By the way, check out my
+						<a href="#work">awesome work</a>. I have earnestly loved
+						learning about Redux and Flask as it gives a deeper
+						understanding of how applications are built and built
+						efficiently. I have really loved React and the
+						flexibility it offers, and making the front-end of the
+						application really stand out, while being subtle.
+					</p>
+					<p>
+						In my decade of engineering experience, I have learned
+						how to effectively communication and be an engaged
+						listener. I strongly feel the most important thing about
+						a constructive work environment is communication. I am
+						looking forward to changing my adjective in my
+						engineering career to software and start building
+						incredible applications! I love all things design,
+						architecture, and am always reading (listening) to a
+						book on a new topic. My other passions outside of coding
+						include playing guitar, snowboarding, comedy, and
+						traveling.
 					</p>
 
 					<ul class="history">
 						<li class="history-item">
-							<img
-								src="/images/icons/university.svg"
-							/>
-							<h5 id="utd-text">BSEE + MSEE - UT at Dallas - 2006-2011</h5>
+							<img src="/images/icons/university.svg" />
+							<h5 id="utd-text">
+								BSEE + MSEE - UT at Dallas - 2006-2011
+							</h5>
 						</li>
 
 						<li class="history-item">
-							<img
-								src="/images/icons/samsung.svg"
-							/>
-							<h5 id="samsung-text">Senior Engineer - Samsung - 2011-2021</h5>
+							<img src="/images/icons/samsung.svg" />
+							<h5 id="samsung-text">
+								Senior Engineer - Samsung - 2011-2021
+							</h5>
 						</li>
 
-												<li class="history-item">
-							<img
-								src="/images/icons/aalogo.svg"
-							/>
+						<li class="history-item">
+							<img src="/images/icons/aalogo.svg" />
 							<h5 id="aa-text">App Academy 2022</h5>
 						</li>
 
-												<li class="history-item">
-							<img
-								src="/images/icons/location.svg"
-							/>
+						<li class="history-item">
+							<img src="/images/icons/location.svg" />
 							<h5 id="loc-text">Los Angeles, CA</h5>
 						</li>
-
-
-
 					</ul>
 					<ul class="icons">
-						<li><a target="_blank" href="https://github.com/brianmay2014" class="icon brands fa-github"><span class="label">Github</span></a></li>
-						<li><a target="_blank" href="https://angel.co/u/brian-james-may" class="icon brands fa-angellist"><span class="label">Angellist</span></a></li>
-						<li><a target="_blank" href="https://www.linkedin.com/in/brian-may-6aa49172" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
-						<li><a target="_blank" href="mailto:brianmay2014@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+						<li>
+							<a
+								target="_blank"
+								href="https://github.com/brianmay2014"
+								class="icon brands fa-github"
+								><span class="label">Github</span></a
+							>
+						</li>
+						<li>
+							<a
+								target="_blank"
+								href="https://angel.co/u/brian-james-may"
+								class="icon brands fa-angellist"
+								><span class="label">Angellist</span></a
+							>
+						</li>
+						<li>
+							<a
+								target="_blank"
+								href="https://www.linkedin.com/in/brian-may-6aa49172"
+								class="icon brands fa-linkedin"
+								><span class="label">LinkedIn</span></a
+							>
+						</li>
+						<li>
+							<a
+								target="_blank"
+								href="mailto:brianmay2014@gmail.com"
+								class="icon solid fa-envelope"
+								><span class="label">Email</span></a
+							>
+						</li>
 					</ul>
 				</article>
 
@@ -262,10 +327,38 @@
 						>
 					</div>
 					<ul class="icons">
-						<li><a target="_blank" href="https://github.com/brianmay2014" class="icon brands fa-github"><span class="label">Github</span></a></li>
-						<li><a target="_blank" href="https://angel.co/u/brian-james-may" class="icon brands fa-angellist"><span class="label">Angellist</span></a></li>
-						<li><a target="_blank" href="https://www.linkedin.com/in/brian-may-6aa49172" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
-						<li><a target="_blank" href="mailto:brianmay2014@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+						<li>
+							<a
+								target="_blank"
+								href="https://github.com/brianmay2014"
+								class="icon brands fa-github"
+								><span class="label">Github</span></a
+							>
+						</li>
+						<li>
+							<a
+								target="_blank"
+								href="https://angel.co/u/brian-james-may"
+								class="icon brands fa-angellist"
+								><span class="label">Angellist</span></a
+							>
+						</li>
+						<li>
+							<a
+								target="_blank"
+								href="https://www.linkedin.com/in/brian-may-6aa49172"
+								class="icon brands fa-linkedin"
+								><span class="label">LinkedIn</span></a
+							>
+						</li>
+						<li>
+							<a
+								target="_blank"
+								href="mailto:brianmay2014@gmail.com"
+								class="icon solid fa-envelope"
+								><span class="label">Email</span></a
+							>
+						</li>
 					</ul>
 				</article>
 
@@ -372,25 +465,65 @@
 						</li>
 					</ul>
 					<ul class="icons">
-						<li><a target="_blank" href="https://github.com/brianmay2014" class="icon brands fa-github"><span class="label">Github</span></a></li>
-						<li><a target="_blank" href="https://angel.co/u/brian-james-may" class="icon brands fa-angellist"><span class="label">Angellist</span></a></li>
-						<li><a target="_blank" href="https://www.linkedin.com/in/brian-may-6aa49172" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
-						<li><a target="_blank" href="mailto:brianmay2014@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+						<li>
+							<a
+								target="_blank"
+								href="https://github.com/brianmay2014"
+								class="icon brands fa-github"
+								><span class="label">Github</span></a
+							>
+						</li>
+						<li>
+							<a
+								target="_blank"
+								href="https://angel.co/u/brian-james-may"
+								class="icon brands fa-angellist"
+								><span class="label">Angellist</span></a
+							>
+						</li>
+						<li>
+							<a
+								target="_blank"
+								href="https://www.linkedin.com/in/brian-may-6aa49172"
+								class="icon brands fa-linkedin"
+								><span class="label">LinkedIn</span></a
+							>
+						</li>
+						<li>
+							<a
+								target="_blank"
+								href="mailto:brianmay2014@gmail.com"
+								class="icon solid fa-envelope"
+								><span class="label">Email</span></a
+							>
+						</li>
 					</ul>
 				</article>
 
 				<!-- Contact -->
 				<article id="contact">
 					<h2 class="major">Contact</h2>
-					<form id='contact-form' method="post" action="mailto:brianmay2014@gmail.com">
+					<form
+						id="contact-form"
+						method="post"
+						action="mailto:brianmay2014@gmail.com"
+					>
 						<div class="fields">
 							<div class="field half">
 								<label for="name">Name</label>
-								<input type="text" name="user_name" id="contact-name" />
+								<input
+									type="text"
+									name="user_name"
+									id="contact-name"
+								/>
 							</div>
 							<div class="field half">
 								<label for="email">Email</label>
-								<input type="text" name="user_email" id="contact-email" />
+								<input
+									type="text"
+									name="user_email"
+									id="contact-email"
+								/>
 							</div>
 							<div class="field">
 								<label for="message">Message</label>
@@ -414,10 +547,38 @@
 						</ul>
 					</form>
 					<ul class="icons">
-						<li><a target="_blank" href="https://github.com/brianmay2014" class="icon brands fa-github"><span class="label">Github</span></a></li>
-						<li><a target="_blank" href="https://angel.co/u/brian-james-may" class="icon brands fa-angellist"><span class="label">Angellist</span></a></li>
-						<li><a target="_blank" href="https://www.linkedin.com/in/brian-may-6aa49172" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
-						<li><a target="_blank" href="mailto:brianmay2014@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+						<li>
+							<a
+								target="_blank"
+								href="https://github.com/brianmay2014"
+								class="icon brands fa-github"
+								><span class="label">Github</span></a
+							>
+						</li>
+						<li>
+							<a
+								target="_blank"
+								href="https://angel.co/u/brian-james-may"
+								class="icon brands fa-angellist"
+								><span class="label">Angellist</span></a
+							>
+						</li>
+						<li>
+							<a
+								target="_blank"
+								href="https://www.linkedin.com/in/brian-may-6aa49172"
+								class="icon brands fa-linkedin"
+								><span class="label">LinkedIn</span></a
+							>
+						</li>
+						<li>
+							<a
+								target="_blank"
+								href="mailto:brianmay2014@gmail.com"
+								class="icon solid fa-envelope"
+								><span class="label">Email</span></a
+							>
+						</li>
 					</ul>
 				</article>
 
@@ -797,11 +958,39 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 			<!-- Footer -->
 			<footer id="footer">
 				<ul class="icons">
-						<li><a target="_blank" href="https://github.com/brianmay2014" class="icon brands fa-github"><span class="label">Github</span></a></li>
-						<li><a target="_blank" href="https://angel.co/u/brian-james-may" class="icon brands fa-angellist"><span class="label">Angellist</span></a></li>
-						<li><a target="_blank" href="https://www.linkedin.com/in/brian-may-6aa49172" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
-						<li><a target="_blank" href="mailto:brianmay2014@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
-					</ul>
+					<li>
+						<a
+							target="_blank"
+							href="https://github.com/brianmay2014"
+							class="icon brands fa-github"
+							><span class="label">Github</span></a
+						>
+					</li>
+					<li>
+						<a
+							target="_blank"
+							href="https://angel.co/u/brian-james-may"
+							class="icon brands fa-angellist"
+							><span class="label">Angellist</span></a
+						>
+					</li>
+					<li>
+						<a
+							target="_blank"
+							href="https://www.linkedin.com/in/brian-may-6aa49172"
+							class="icon brands fa-linkedin"
+							><span class="label">LinkedIn</span></a
+						>
+					</li>
+					<li>
+						<a
+							target="_blank"
+							href="mailto:brianmay2014@gmail.com"
+							class="icon solid fa-envelope"
+							><span class="label">Email</span></a
+						>
+					</li>
+				</ul>
 				<p class="copyright">
 					&copy; 2022 Brian May. Design:
 					<a href="https://html5up.net">HTML5 UP</a>.
